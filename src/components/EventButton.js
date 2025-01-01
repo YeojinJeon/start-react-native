@@ -19,7 +19,9 @@ const EventButton = () => {
             onPressOut={_onPressOut}
             onPress={_onPress}
             onLongPress={_onLongPress}
-        // delayLongPress={3000}
+            delayLongPress={3000}
+            hitSlop={50}
+            pressRetentionOffset={{ bottom: 50, left: 50, right: 50, top: 50 }}
         >
             <Text style={{ color: 'white', fontSize: 24 }}>Press</Text>
         </Pressable>
