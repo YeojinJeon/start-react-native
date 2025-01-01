@@ -16,6 +16,8 @@ const App = () => {
                     fontSize: 30, marginBottom: 10
                 }}>Props</Text>
             <MyButton title="Button" />
+            <MyButton>Child Button</MyButton>
+            {/* <MyButton /> */}
         </View>
     );
 };

@@ -12,7 +12,8 @@ const MyButton = props => {
                 borderRadius: 8,
             }}
             onPress={() => alert('Press MyButton!!!')}>
-            <Text style={{ color: 'white', fontSize: 24 }}>{props.title}</Text>
+            <Text style={{ color: 'white', fontSize: 24 }}>
+                {props.children || props.title}</Text>
         </TouchableOpacity>
     );
 };
