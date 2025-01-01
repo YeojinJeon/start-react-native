@@ -12,7 +12,7 @@ const MyButton = ({ title = "default", ...props }) => {
                 margin: 10,
                 borderRadius: 8,
             }}
-            onPress={() => alert('Press MyButton!!!')}>
+            onPress={() => props.onPress()}>
             <Text style={{ color: 'white', fontSize: 24 }}>
                 {props.children || title}</Text>
         </TouchableOpacity>

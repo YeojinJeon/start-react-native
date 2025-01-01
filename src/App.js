@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View, Button } from "react-native";
 import MyButton from "./components/MyButton";
+import Counter from "./components/Counter";
 
 const App = () => {
     return (
@@ -14,11 +15,8 @@ const App = () => {
             <Text
                 style={{
                     fontSize: 30, marginBottom: 10
-                }}>Props</Text>
-            <MyButton title="Button" />
-            <MyButton>Child Button</MyButton>
-            <MyButton />
-            {/* <MyButton title={123} /> */}
+                }}>state</Text>
+            <Counter />
         </View>
     );
 };
