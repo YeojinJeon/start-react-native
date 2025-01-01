@@ -17,7 +17,7 @@ const App = () => {
                 }}>Props</Text>
             <MyButton title="Button" />
             <MyButton>Child Button</MyButton>
-            {/* <MyButton /> */}
+            <MyButton />
         </View>
     );
 };

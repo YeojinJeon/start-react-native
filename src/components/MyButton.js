@@ -18,6 +18,10 @@ const MyButton = props => {
     );
 };
 
+MyButton.defaultProps = {
+    title: 'Default Button',
+}
+
 export default MyButton;
 
 
