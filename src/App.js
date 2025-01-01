@@ -14,9 +14,8 @@ const App = () => {
             <Text
                 style={{
                     fontSize: 30, marginBottom: 10
-                }}>Button Component</Text>
-            <Button title="Button" onPress={() => alert('press !!!')} />
-            <MyButton />
+                }}>Props</Text>
+            <MyButton title="Button" />
         </View>
     );
 };

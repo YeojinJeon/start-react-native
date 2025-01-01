@@ -1,7 +1,8 @@
 import React from "react";
 import { Text, TouchableOpacity } from "react-native";
 
-const MyButton = () => {
+const MyButton = props => {
+    // props.title = 'ooo';
     return (
         <TouchableOpacity
             style={{
@@ -11,7 +12,7 @@ const MyButton = () => {
                 borderRadius: 8,
             }}
             onPress={() => alert('Press MyButton!!!')}>
-            <Text style={{ color: 'white', fontSize: 24 }}>MyButton</Text>
+            <Text style={{ color: 'white', fontSize: 24 }}>{props.title}</Text>
         </TouchableOpacity>
     );
 };
